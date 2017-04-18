@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main (void)
+{
+    const char baseDigits[16] =
+    {
+        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+        'A', 'B', 'C', 'D', 'E', 'F'
+    };
+int convertedNumber[64];
+long int numberToConvert;
+int nextDigit, base ,index=0;
+//we download number and basic system
+printf("What number you want convert? \n");
+scanf("ld",&numberToConvert);
+printf("What is a basic system? \n");
+scanf("%i",&base);
+do
+{
+    convertedNumber[index]=numberToConvert % base;
+    ++index;
+    numberToConvert = numberToConvert/base;
+}
+while(numberToConvert != 0);
+//present result
+puts("Converted number = ");
+for(--index; index>=0; --index)
+{
+    nextDigit = convertedNumber[index];
+    printf("%c", baseDigits[nextDigit]);
+
+}
+printf("\n");
+system("pause");
+return 0;
+}

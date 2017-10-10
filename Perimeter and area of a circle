@@ -1,0 +1,14 @@
+/*
+Write a program to compute the perimeter and area of a circle with a radius of 6 inches.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    float paramiter,area;
+    float pi=3.14;
+    int radius=6;
+    printf("Paramiter of the rectangle = %f inches \n",paramiter=2*pi*radius);
+    printf("Area of the circle = %f square inches",area=pi*radius*radius);
+    return 0;
+}

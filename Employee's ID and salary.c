@@ -1,45 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<CodeBlocks_project_file>
-	<FileVersion major="1" minor="6" />
-	<Project>
-		<Option title="emplyee" />
-		<Option execution_dir="D:/Code Blocks/emplyee/" />
-		<Option pch_mode="2" />
-		<Option compiler="gcc" />
-		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/emplyee" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-g" />
-				</Compiler>
-			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/emplyee" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
-			</Target>
-		</Build>
-		<Compiler>
-			<Add option="-Wall" />
-		</Compiler>
-		<Unit filename="D:/Code Blocks/emplyee/main.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
-			<lib_finder disable_auto="1" />
-		</Extensions>
-	</Project>
-</CodeBlocks_project_file>
+/*
+Write a program that accepts an employee's ID, total worked hours of a month and the amount he received per hour. Print the employee's ID and salary (with two decimal places) of a particular month.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+    char ID[10];
+    int hrs;
+    double salary,salaryamo;
+
+    printf("Write your ID employee : ");
+    scanf("%s",&ID);
+    printf("How many hours you work? : ");
+    scanf("%d",&hrs);
+    printf("What is salary amount/hr?");
+    scanf("%lf",&salaryamo);
+    salary=hrs*salaryamo;
+    printf("Employees ID = %s \n",ID);
+    printf("Salary = %2.f$\n",salary);
+    return (0);
+}

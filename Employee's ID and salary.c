@@ -17,6 +17,6 @@ int main(void)
     scanf("%lf",&salaryamo);
     salary=hrs*salaryamo;
     printf("Employees ID = %s \n",ID);
-    printf("Salary = %2.f$\n",salary);
+    printf("Salary = %.2f$\n",salary);
     return (0);
 }

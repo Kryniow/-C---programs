@@ -12,12 +12,12 @@ int main()
     scanf("%d",&amt);
     total=amt/100;
     printf("There are: ");
-	printf("\n%d Note(s) of 100.00\n", total);
-	amt=(amt-(total*100));
-	total=amt/50;
+    printf("\n%d Note(s) of 100.00\n", total);
+    amt=(amt-(total*100));
+    total=amt/50;
     printf("\n%d Note(s) of 50.00\n",total);
     amt=(amt-(total*50));
-	total=amt/20;
+    total=amt/20;
     printf("\n%d Note(s) of 20.00\n",total);
     amt=amt-(total*20);
     total=amt/10;
